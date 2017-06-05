@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jeopardy Game</title>
+    <style type="text/css">
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body id="body">
+
+    <div style="width: 700px; margin: 0 auto; float:left;">
+
+      <h1 id="page-heading" style="margin-bottom:5px"></h1>
+
+      <!-- Each question should display the category, point value, and the question text. -->
+      <div id="category"></div>
+      <div id="question"></div>
+      <div id="points"></div>
+      <div id="hide"></div>
+
+      <!-- You should also have a text box that people can type their answer into -->
+      <div class="answer">
+        <p><b>What is...</b></p>
+        <textarea id="whatis" rows="5" cols="50"></textarea>
+      </div>
+
+      <!-- There should be a button they can click to submit their answer. -->
+      <div style="margin: 0 auto;text-align:center; float: left;">
+        <button id="guess">GUESS</button><br>
+      </div>
+      <br />
+      <br />
+      
+
+      <!-- Keep track of the user's score. When the user clicks the 'guess' button, -->
+      <div id="result"></div>
+      <div id="yourscore"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascripts/js_jeopardy.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
